@@ -1,0 +1,387 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827
+    );
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN CONTAINER */
+.container {
+
+    width: 90%;
+
+    margin: auto;
+
+    padding: 30px 0;
+}
+
+
+/* HEADER */
+.header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+h1 {
+
+    color: #38bdf8;
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+}
+
+.tagline {
+
+    color: #94a3b8;
+
+    font-size: 18px;
+}
+
+
+/* UPLOAD SECTION */
+.upload-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+
+/* FILE BOX */
+.file-box {
+
+    background: rgba(255,255,255,0.05);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+    min-width: 280px;
+}
+
+.file-box label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-weight: bold;
+
+    color: #cbd5e1;
+}
+
+
+/* BUTTONS */
+button {
+
+    padding: 12px 24px;
+
+    background: #38bdf8;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: black;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+    font-size: 15px;
+}
+
+button:hover {
+
+    background: #0ea5e9;
+
+    transform: scale(1.05);
+}
+
+
+/* CHECK BUTTON */
+.check-section {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.check-btn {
+
+    font-size: 18px;
+
+    padding: 14px 30px;
+}
+
+
+/* FILE NAME DISPLAY */
+.file-name {
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    padding: 8px 14px;
+
+    background: #1e293b;
+
+    border-radius: 8px;
+
+    color: #f8fafc;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+
+
+/* RESULT BOX */
+.result-box {
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    width: 60%;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+
+    backdrop-filter: blur(10px);
+}
+
+.result-box h2 {
+
+    color: #38bdf8;
+}
+
+
+/* PREVIEW SECTION */
+.preview-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* PREVIEW BOX */
+.preview-box {
+
+    flex: 1;
+
+    min-width: 320px;
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+
+    backdrop-filter: blur(10px);
+}
+
+.preview-box h3 {
+
+    color: #38bdf8;
+
+    margin-bottom: 15px;
+}
+
+
+/* PREVIEW CONTENT */
+.preview-content {
+
+    height: 500px;
+
+    overflow-y: auto;
+
+    background: #0f172a;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    line-height: 1.7;
+}
+
+
+/* TEXT */
+pre {
+
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+}
+
+
+/* SAME WORDS */
+.word-highlight {
+
+    background: #facc15;
+
+    color: black;
+
+    padding: 2px 4px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+
+/* SAME SENTENCES */
+.sentence-highlight {
+
+    background: #22c55e;
+
+    color: white;
+
+    padding: 3px 5px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+
+/* EXPORT BUTTON */
+.export-section {
+
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+.export-btn {
+
+    background: #22c55e;
+
+    color: white;
+}
+
+.export-btn:hover {
+
+    background: #16a34a;
+}
+
+
+/* CUSTOM SCROLLBAR */
+.preview-content::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+.preview-content::-webkit-scrollbar-track {
+
+    background: #1e293b;
+
+    border-radius: 10px;
+}
+
+.preview-content::-webkit-scrollbar-thumb {
+
+    background: #38bdf8;
+
+    border-radius: 10px;
+}
+.progress-container {
+
+    width: 100%;
+
+    background: #1e293b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-top: 15px;
+
+    height: 30px;
+}
+
+.progress-bar {
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #22c55e,
+        #eab308,
+        #ef4444
+    );
+
+    text-align: center;
+
+    line-height: 30px;
+
+    font-weight: bold;
+
+    color: white;
+
+    transition: width 0.5s ease;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .preview-container {
+
+        flex-direction: column;
+    }
+
+    .result-box {
+
+        width: 90%;
+    }
+}
