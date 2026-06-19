@@ -49,7 +49,7 @@ Plagiarism-Detection-System/
 ├── requirements.txt
 ├── README.md
 │
-├── templates/
+├── template/
 │   └── index.html
 │
 └── static/
