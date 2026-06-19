@@ -1,0 +1,10 @@
+Flask==2.3.3
+numpy==1.26.4
+scikit-learn==1.3.2
+nltk==3.8.1
+pandas==2.1.4
+scipy==1.11.4
+joblib==1.3.2
+gunicorn==21.2.0        # for deployment
+flask-cors==4.0.0      # if using APIs across origins
+regex==2023.10.3       # enhanced text processing
