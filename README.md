@@ -79,8 +79,6 @@ Create Virtual Environment:
 python -m venv venv
 ```
 
-python -m venv venv
-
 Install dependencies:
 
 ```bash
