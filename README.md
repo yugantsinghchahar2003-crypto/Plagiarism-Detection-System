@@ -74,6 +74,13 @@ Move into the project folder:
 cd Plagiarism-Detection-System
 ```
 
+Create Virtual Environment:
+```bash
+python -m venv venv
+```
+
+python -m venv venv
+
 Install dependencies:
 
 ```bash
