@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlagDetect</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>PlagDetect</h1>
+
+            <p class="tagline">
+                Ensuring Originality, Detecting Similarity
+            </p>
+
+        </div>
+
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+
+            <!-- File 1 -->
+            <div class="file-box">
+
+                <label>Upload File 1</label>
+
+                <input type="file" id="file1" hidden>
+
+                <button class="upload-btn"
+                    onclick="document.getElementById('file1').click()">
+
+                    Choose File
+
+                </button>
+
+                <span id="file1-name"
+                    class="file-name">
+
+                    No file chosen
+
+                </span>
+
+            </div>
+
+
+            <!-- File 2 -->
+            <div class="file-box">
+
+                <label>Upload File 2</label>
+
+                <input type="file" id="file2" hidden>
+
+                <button class="upload-btn"
+                    onclick="document.getElementById('file2').click()">
+
+                    Choose File
+
+                </button>
+
+                <span id="file2-name"
+                    class="file-name">
+
+                    No file chosen
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Check Button -->
+        <div class="check-section">
+
+            <button class="check-btn"
+                onclick="checkPlagiarism()">
+
+                Check Plagiarism
+
+            </button>
+
+        </div>
+
+
+        <!-- Result Section -->
+        <div id="result"
+            class="result-box">
+
+            <h3>
+                Upload files to begin analysis
+            </h3>
+
+        </div>
+
+
+        <!-- Preview Section -->
+        <div class="preview-container">
+
+            <!-- File 1 Preview -->
+            <div class="preview-box">
+
+                <h3 id="name1">
+                    File 1 Preview
+                </h3>
+
+                <div class="preview-content">
+
+                    <pre id="preview1"></pre>
+
+                </div>
+
+            </div>
+
+
+            <!-- File 2 Preview -->
+            <div class="preview-box">
+
+                <h3 id="name2">
+                    File 2 Preview
+                </h3>
+
+                <div class="preview-content">
+
+                    <pre id="preview2"></pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Export Button -->
+        <div class="export-section">
+
+            <button id="exportBtn"
+                class="export-btn"
+                onclick="exportPDF()"
+                style="display:none;">
+
+                Export as PDF
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
