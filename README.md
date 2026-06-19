@@ -85,6 +85,22 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+```bash
+pip install flask scikit-learn nltk numpy pandas scipy joblib
+```
+
+```bash
+pip install sentence-transformers torch
+```
+
+```bash
+pip install PyPDF2
+```
+
+```bash
+pip install reportlab
+
+
 Run the application:
 
 ```bash
